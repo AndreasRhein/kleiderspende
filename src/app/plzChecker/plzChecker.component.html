@@ -1,0 +1,20 @@
+<div class="d-flex flex-column p-3 h-100">
+
+    <!-- Überschrift -->
+    <span class="mb-3">
+        Bitte geben Sie Ihre PLZ ein, um zu überprüfen ob eine Abholung möglich ist.
+    </span>
+
+    <!-- PLZ -->
+    <mat-form-field>
+        <input matInput
+            type="text"
+            placeholder="PLZ eingeben" 
+            [(ngModel)]="zipCode"
+            name="numberField"
+            maxlength="5">
+    </mat-form-field>
+
+    <!-- Button -->
+    <button mat-button class="mt-auto" (click)="handleClick()">Bestätigen</button>
+</div>
